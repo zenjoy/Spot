@@ -56,6 +56,7 @@ module Spot
 
     def self.play_song(spotifyTrack)
       `./script/play-song #{spotifyTrack}`
+      sleep 1
       self.playing
     end
 
